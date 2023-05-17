@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <title>This is a form</title>
+
+
+
+</head>
+<body>
+
+  <header>
+    <h1>The code review</h1>
+  </header>
+
+  <section id="intro">
+    <h2>Sign up for our newslettter</h2>
+    <p id="content1">Get the latest news on how your code is</p>
+    <p>doing right now in your inbox</p>
+    
+  
+
+  </section>
+ 
+  <div class="wrap">
+    
+  <hr class="thick2">
+  <hr class="thick1">
+
+</div>  
+
+
+<form action="index.html" method="post">
+    
+      <fieldset class="formabove">
+        <legend class="formh2">Contact Information</legend>
+      <label class="label-contact" for="fullname">Fullname:</label> 
+      <input type="text" name="fullname" id="fullname" placeholder="required"/>
+      <label class="label-contact" for="email">Email adress:</label> 
+      <input type="text" name="email" id="email" placeholder="required"/>
+      <label class="label-contact" for="phone">Phone Number:</label> 
+      <input type="text" name="phone" id="phone" />
+      <label class="label-contact" for="street">Street adress:</label> 
+      <input type="text" name="street" id="street" />
+      <label class="label-contact" for="city">City:</label> 
+      <input type="text" name="city" id="city" />
+      <label class="label-contact" for="state">State:</label> 
+      <select id="state" name="state" >
+        <option value="" disabled selected>Select state</option>
+        <option value="NH">Noord-Holland</option>
+        <option value="ZH">Zuid-Holland</option>
+        <option value="Limburg">Limburg</option>
+      </select>
+      <label class="label-contact" for="zip">Zip Code:</label> 
+      <input type="text" name="zip" id="zip" />
+    </fieldset>
+
+       
+          
+          <hr class="thick3">
+
+         
+      <h2 class="formh2">Newsletter</h2>
+      <div class="formbelow">
+
+      <p >Select the newsletters you would like to receive</p>
+      
+        <input  type="checkbox" id="html" name="html" value="html">
+        <label  for="html"> HTML news</label><br>
+        <input  type="checkbox" id="Javascript" name="Javascript" value="Javascript">
+        <label  for="Javascript"> Javascript news</label><br>
+        <input  type="checkbox" id="CSS" name="CSS" value="CSS">
+        <label  for="CSS"> CSS news</label><br><br>
+      
+        <p>Newsletter formats</p>
+        
+      <input  type="radio" id="text" name="html" value="html">
+      <label  for="html">HTML</label><br>
+      <input   type="radio" id="plain" name="html" value="html">
+      <label  for="text">Plain text</label>
+    
+        
+        <p>Other topics you would like to discuss</p>
+        
+          <input class="textexpanded" type='text' />
+        
+          
+          <input type="submit" value="Submit">
+        </div>
+    </form>
+    <footer>Copyright The Code review</footer>
+</body>
+</html>
