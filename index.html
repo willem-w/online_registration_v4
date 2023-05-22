@@ -20,7 +20,7 @@
   </header>
 
   <section id="intro">
-    <h2>Sign up for our newslettter</h2>
+    <h2>Sign up for our newsletter</h2>
     <p id="content1">Get the latest news on how your code is</p>
     <p>doing right now in your inbox</p>
     
@@ -38,62 +38,63 @@
 
 <form action="index.html" method="post">
     
-      <fieldset class="formabove">
-        <legend class="formh2">Contact Information</legend>
-      <label class="label-contact" for="fullname">Fullname:</label> 
-      <input type="text" name="fullname" id="fullname" placeholder="required"/>
-      <label class="label-contact" for="email">Email adress:</label> 
-      <input type="text" name="email" id="email" placeholder="required"/>
+    <fieldset class="formabove">
+      <legend class="formh2">Contact Information</legend>
+      <label class="label-contact" for="name">Full name:</label> 
+        <input type="text" name="user_name" id="name" placeholder="Required *">
+      <label class="label-contact" for="email">Email Address:</label> 
+      <input type="email" name="email" id="user_email" placeholder="Required *">
       <label class="label-contact" for="phone">Phone Number:</label> 
-      <input type="text" name="phone" id="phone" />
-      <label class="label-contact" for="street">Street adress:</label> 
-      <input type="text" name="street" id="street" />
+      <input type="tel" name="user_phone" id="phone" />
+      <label class="label-contact" for="street">Street Adress:</label> 
+      <input type="text" name="user_adress" id="street" />
       <label class="label-contact" for="city">City:</label> 
-      <input type="text" name="city" id="city" />
+      <input type="text" name="user_city" id="city" />
       <label class="label-contact" for="state">State:</label> 
-      <select id="state" name="state" >
+      <select id="state" name="user_state" >
         <option value="" disabled selected>Select state</option>
         <option value="NH">Noord-Holland</option>
         <option value="ZH">Zuid-Holland</option>
         <option value="Limburg">Limburg</option>
       </select>
       <label class="label-contact" for="zip">Zip Code:</label> 
-      <input type="text" name="zip" id="zip" />
+      <input type="text" name="user_zip" id="zip" />
     </fieldset>
 
        
           
-          <hr class="thick3">
+        <hr class="thick3">
 
          
-      <h2 class="formh2">Newsletter</h2>
-      <div class="formbelow">
-
+      
+      <fieldset class="formbelow"> 
+        <legend class="formh2">Newsletter</legend>
       <p >Select the newsletters you would like to receive</p>
       
-        <input  type="checkbox" id="html" name="html" value="html">
-        <label  for="html"> HTML news</label><br>
-        <input  type="checkbox" id="Javascript" name="Javascript" value="Javascript">
-        <label  for="Javascript"> Javascript news</label><br>
-        <input  type="checkbox" id="CSS" name="CSS" value="CSS">
-        <label  for="CSS"> CSS news</label><br><br>
+        <input  type="checkbox" id="html_news" name="user_html_news" value="html">
+        <label  for="html_news">HTML news</label><br>
+        <input  type="checkbox" id="Javascript_news" name="user_Javascript_news" value="Javascript">
+        <label  for="Javascript_news"> Javascript news</label><br>
+        <input  type="checkbox" id="CSS_news" name="CSS_user_news" value="CSS">
+        <label  for="CSS_news"> CSS news</label><br><br>
       
         <p>Newsletter formats</p>
         
-      <input  type="radio" id="text" name="html" value="html">
+      <input  type="radio" id="html" name="user_choice" value="html">
       <label  for="html">HTML</label><br>
-      <input   type="radio" id="plain" name="html" value="html">
-      <label  for="text">Plain text</label>
+      <input   type="radio" id="plain" name="user_choice" value="html">
+      <label  for="plain">Plain text</label>
     
         
         <p>Other topics you would like to discuss</p>
         
-          <input class="textexpanded" type='text' />
+        <textarea id="topics" name="user_topics"></textarea>
         
           
           <input type="submit" value="Submit">
-        </div>
+      </fieldset>
     </form>
+    
     <footer>Copyright The Code review</footer>
 </body>
 </html>
