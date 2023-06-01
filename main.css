@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+
+input[type]:focus, select[id="state"]:focus, textarea:focus {  
+  background-color: rgb(161, 202, 202);
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   
